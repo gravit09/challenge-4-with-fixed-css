@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--Very-dark-blue);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 150px;
+  background-color: var(--Dark-desaturated-blue);
+  color: white;
+  border-radius: 8px;
+}
+
+img {
+  width: 500px;
+}
+
+span {
+  color: var(--Soft-violet);
+}
+
+.bottom {
+  display: flex;
+  line-height: 8px;
+}
+
+.content {
+  margin: 35px 35px;
+  line-height: 35px;
+}
+
+p {
+  opacity: 50%;
+}
+
+img {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .bottom {
+    display: inline;
+  }
+  img {
+    width: 400px;
+  }
+
+  ul {
+    margin-right: 40px;
+    line-height: 15px;
+  }
+}
